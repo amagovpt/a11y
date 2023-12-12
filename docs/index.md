@@ -4,6 +4,8 @@ title: AMA Comunidades - Acessibilidade Digital
 
 ## Acessibiidade Digital
 
+A Comunidade de Prática em Acessibilidade Digital pretende reunir profissionais ... mas também utilizadores, que lidam no seu dia-a-dia com ... - vá, vamos colocar um foco nisto! :-) - conteúdos digitais produzidos pela Administração Pública Portuguesa.
+
 A comunidade "Acessibilidade Digital" é um grupo onde se pode:
 
 - Fazer perguntas sobre acessibilidade digital, desenvolver conhecimento e obter ou dar ajuda;
