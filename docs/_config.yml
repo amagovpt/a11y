@@ -1,10 +1,10 @@
-# Tema do sítio Web
+ssi# Tema do sítio Web
 # - Lista de temas suportados oficialmente pelo GitHub Pages: https://pages.github.com/themes/
 remote_theme: pages-themes/slate@v0.2.0
 
 # Título do sítio Web
-title: AMA Comunidades - Acessibilidade Digital
-description: Uma comunidade de prática
+title: AMA Comunidades
+description: Acessibilidade Digital
 
 # Plug-ins
 # Este plug-in pertence ao tema pages-themes/slate@0.2.0
