@@ -29,14 +29,14 @@ A comunidade "Acessibilidade Digital" é um grupo onde se pode:
 
 O seu sítio Web segue práticas de acessibilidade? Declare isso ao Mundo! Recolha as evidências e publique a Declaração de Acessibilidade:
 
-- Comece por ler o artigo "3 passos para publicar a Declaração de Acessibilidade"
+- Comece por ler o [artigo "3 passos para publicar a Declaração de Acessibilidade"](https://www.acessibilidade.gov.pt/blogue/categoria-acessibilidade/3passos-declaracao/)
 
 ## Selo de Usabilidade e Acessibilidade
 
 Se já tem uma Declaração de Acessibilidade e quer ir mais longe e implementar mais boas práticas de acessibilidade e usabilidade web? Bronze, Prata ou Ouro, comece por aqui:
 
-- Checklists do Selo de Usabilidade e Usabilidade
-- Kit Selo de Usabilidade e Acessibilidade
+- [Checklists do Selo de Usabilidade e Usabilidade](https://amagovpt.github.io/kit-selo/checklists/)
+- [Kit Selo de Usabilidade e Acessibilidade](https://amagovpt.github.io/kit-selo/)
 
 ## Ferramentas para inspecionar práticas de acessibilidade em sítios Web
 
