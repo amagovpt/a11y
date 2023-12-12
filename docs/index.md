@@ -15,7 +15,7 @@ A comunidade "Acessibilidade Digital" é um grupo onde se pode:
 
 ## Ser parte da comunidade de prática
 
-- [Fórum de discussão GitHub](). Ainda estamos a explorar os fóruns de discussão do Git. Veja o que já se discutiu... muito pouco :-). Abra um tópico e... um dia, chegaremos a uma KnowledgeBase.
+- [Fórum de discussão GitHub](https://github.com/amagovpt/a11y/discussions). Ainda estamos a explorar os fóruns de discussão do Git. Veja o que já se discutiu... muito pouco :-). Abra um tópico e... um dia, chegaremos a uma KnowledgeBase.
 - Estamos a pensar na criação de alguns recursos que gostaríamos da sua participação. Daremos nota em breve desta atividade co-criativa.
 
 ## AMA e Acessibilidade
