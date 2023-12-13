@@ -27,6 +27,12 @@ A comunidade "Acessibilidade Digital" é um grupo onde se pode:
 - [acessibiidade.gov.pt](https://www.acessibilidade.gov.pt)
 - [Selo de Usabilidade e Acessibilidade](https://selo.usabilidade.gov.pt)
 
+## Eventos
+
+Por vezes a Comunidade também se encontra presencialmente:
+
+- [Jornadas de Acessibilidde e Usabilidade na AP 2023](https://www.acessibilidade.gov.pt/jornadas2023/)
+
 ## Declaração de Acessibilidade Web
 
 O seu sítio Web segue práticas de acessibilidade? Declare isso ao Mundo! Recolha as evidências e publique a Declaração de Acessibilidade:
