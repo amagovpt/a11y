@@ -1,8 +1,8 @@
 ---
-title: AMA Comunidades - Acessibilidade e Usabilidade Digital
+title: Comunidades AP - Acessibilidade e Usabilidade Digital
 ---
 
-[voltar a AMA Comunidades](/comunidades/)
+[voltar a Comunidades AP](/comunidades/)
 
 ## Acessibilidade e Usabilidade Digital
 
@@ -20,7 +20,7 @@ A comunidade "Acessibilidade Digital" é um grupo onde se pode:
 - [Fórum de discussão GitHub](https://github.com/amagovpt/a11y/discussions). Ainda estamos a explorar os fóruns de discussão do Git. Veja o que já se discutiu... muito pouco :-). Abra um tópico e... um dia, chegaremos a uma KnowledgeBase.
 - Estamos a pensar na criação de alguns recursos que gostaríamos da sua participação. Daremos nota em breve desta atividade co-criativa.
 
-## AMA e Acessibilidade
+## AP e Acessibilidade
 
 - [AccessMonitor](https://accessmonitor.acessibilidade.gov.pt)
 - [Observatório Português da Acessibilidade Web](https://observatorio.acessibilidade.gov.pt/directories)
