@@ -48,8 +48,9 @@ Se já tem uma Declaração de Acessibilidade e quer ir mais longe e implementar
 
 ## Ferramentas para inspecionar práticas de acessibilidade em sítios Web
 
-- [ANDI - Accessible Name & Description Inspector](https://www.ssa.gov/accessibility/andi/help/install.html)
-- [Web Developer Toolbar](https://chrispederick.com/work/web-developer/)
+- [ANDI - Accessible Name & Description Inspector](https://www.ssa.gov/accessibility/andi/help/install.html) - uma das ferramentas de validaçõa mais potentes e atuais para autoria pericial de práticas de acessibilidade. É usada pela equipa americana da <em lang="en">section 508</em>
+- [Accessibility Insights](https://accessibilityinsights.io) - valida páginas Web, aplicações Web e aplicações Windows
+- [Web Developer Toolbar](https://chrispederick.com/work/web-developer/) - na auditoria de práticas de acessibilidade web precisamos, não raras as vezes, de lupas de aumento para evidenciar determinados fenómenos. A toolbar do <em lang="en">Chris Pederick</em> é uma lupa do tipo canivete suiço :-) - "preciso de ...; ela tem!" 
 
 ## Guias e Manuais:
 
