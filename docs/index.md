@@ -48,7 +48,7 @@ Se já tem uma Declaração de Acessibilidade e quer ir mais longe e implementar
 
 ## Ferramentas para inspecionar práticas de acessibilidade em sítios Web
 
-- [ANDI - Accessible Name & Description Inspector](https://www.ssa.gov/accessibility/andi/help/install.html) - uma das ferramentas de validação mais potentes e atuais para autoria pericial de práticas de acessibilidade. É usada pela equipa americana da <em lang="en">section 508</em>
+- [ANDI - Accessible Name & Description Inspector](https://www.ssa.gov/accessibility/andi/help/install.html) - uma das ferramentas de validação mais potentes e atuais para auditoria pericial de práticas de acessibilidade. É usada pela equipa americana da <em lang="en">section 508</em>
 - [Accessibility Insights](https://accessibilityinsights.io) - valida páginas Web, aplicações Web e aplicações Windows
 - [Web Developer Toolbar](https://chrispederick.com/work/web-developer/) - na auditoria de práticas de acessibilidade web precisamos, não raras as vezes, de lupas de aumento para evidenciar determinados fenómenos. A toolbar do <em lang="en">Chris Pederick</em> é uma lupa do tipo canivete suiço :-) - "preciso de ...; ela tem!"
 - [Button Contrast Checker da Aditus](https://www.aditus.io/button-contrast-checker/) - é das equipas portuguesas mais brilhantes que conhecemos nestes 25 anos de acessibilidade. Esta ferramenta é brilhante e chama a atenção para um dos problemas mais frequentes nas aplicações Web: o contraste dos botões. Quase todos erramos os rácios de contraste. Verifica o contraste não apenas do texto, mas também o contraste do fundo do botão com o fundo da página onde este está aplicado. "Pois, 4,5 para 1 para o texto e 3 para 1 no caso do fundo com o fundo". Não percebeu? Faça o teste! :-)
