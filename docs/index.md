@@ -43,7 +43,7 @@ O seu sítio Web segue práticas de acessibilidade? Declare isso ao Mundo! Recol
 
 Se já tem uma Declaração de Acessibilidade e quer ir mais longe e implementar mais boas práticas de acessibilidade e usabilidade web? Bronze, Prata ou Ouro, comece por aqui:
 
-- [Checklists do Selo de Usabilidade e Usabilidade](https://amagovpt.github.io/kit-selo/checklists/)
+- [Checklists do Selo de Usabilidade e Acessibilidade](https://amagovpt.github.io/kit-selo/checklists/)
 - [Kit Selo de Usabilidade e Acessibilidade](https://amagovpt.github.io/kit-selo/)
 
 ## Ferramentas para inspecionar práticas de acessibilidade em sítios Web
