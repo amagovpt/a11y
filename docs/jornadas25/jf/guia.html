@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    	body {
+    		margin:auto auto;
+    		max-width: 600px;
+    	}
+    	img {width:100%}
+    </style>
+</head>
+<body>
+<h1 id="inspecao-manual-de-praticas-de-acessibilidade-web">Inspeção Manual de práticas de acessibilidade Web</h1>
+
+<p>AMA, I.P / Jorge Fernandes
+Março de 2025</p>
+
+<p>O presente documento encontra-se online no Repositório da Comunidade AP - Acessibilidade e Usabilidade Digital: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/">https://amagovpt.github.io/a11y/jornadas25/jf/</a> </p>
+
+<p>Pode visitar a <a href="https://amagovpt.github.io/a11y/">Comunidades AP - Acessibilidade e Usabilidade Digital</a> e deixar a sua questão no <a href="https://github.com/amagovpt/a11y/discussions">Fórum de Discussão</a> ou deixar um <a href="https://github.com/amagovpt/a11y/issues">Issue</a>, se for mais fácil.</p>
+<div class="page-break" style="page-break-before: always;"></div>
+
+<p>índice</p><div class="TOC">
+
+
+<ul>
+<li><a href="#inspecao-manual-de-praticas-de-acessibilidade-web">Inspeção Manual de práticas de acessibilidade Web</a>
+
+<ul>
+<li><a href="#andi-accessible-name-description-inspector">ANDI - Accessible Name &amp; Description Inspector</a></li>
+<li><a href="#notas-para-analise-do-aspeto-1-menus-de-navegacao">Notas para análise do aspeto 1 - Menus de Navegação</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#teste">Teste</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-2-titulos-e-subtitulos">Notas para análise do aspeto 2 - Títulos e Subtítulos</a>
+
+<ul>
+<li><a href="#modelo">Modelo</a></li>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#teste">Teste</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-3-tabelas-de-dados">Notas para análise do aspeto 3 - Tabelas de dados</a>
+
+<ul>
+<li><a href="#modelo">Modelo</a></li>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#teste">Teste</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-4-formularios">Notas para análise do aspeto 4 - Formulários</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#testes">Testes</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-5-graficos-e-imagens-link">Notas para análise do aspeto 5 - Gráficos e imagens-link</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#teste">Teste</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-6-contraste">Notas para análise do aspeto 6 - Contraste</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#testes">Testes</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-7-players">Notas para análise do aspeto 7 - Players</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#testes">Testes</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-8-estrutura-da-pagina">Notas para análise do aspeto 8 - Estrutura da página</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#teste">Teste</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-9-modais">Notas para análise do aspeto 9 - Modais</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#teste">Teste</a></li>
+</ul></li>
+<li><a href="#notas-para-analise-do-aspeto-10-ficheiros-pdf">Notas para análise do aspeto 10 - Ficheiros PDF</a>
+
+<ul>
+<li><a href="#requisitos">Requisitos</a></li>
+<li><a href="#testes">Testes</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div class="page-break" style="page-break-before: always;"></div>
+
+<h2 id="andi-accessible-name-description-inspector">ANDI - Accessible Name &amp; Description Inspector</h2>
+
+<p>O Accessible Name é o nome pelo qual um elemento da interface é identificado pelas tecnologias de apoio, como leitores de ecrã. Ele pode ser definido por atributos como aria-label, aria-labelledby, alt (para imagens) ou pelo próprio texto visível do elemento.</p>
+
+<p>Página demonstrativa do conceito: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/nome-acessivel.html">https://amagovpt.github.io/a11y/jornadas25/jf/nome-acessivel.html</a></p>
+
+<h2 id="notas-para-analise-do-aspeto-1-menus-de-navegacao">Notas para análise do aspeto 1 - Menus de Navegação</h2>
+
+<p>Um menu é uma lista de opções. Não é um monte de opções.</p>
+
+<p>Como distinguir uma lista de opções que faz parte de um texto, de uma lista de opções que constitui um menu de opções da página?</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>3 observações:</p>
+
+<ul>
+<li>1.1 O menu de navegação deve estar estruturado como uma lista de opções</li>
+<li>1.2 É possível selecionar as opções e as subopções do menu quer com rato quer com teclado</li>
+<li>1.3 As imagens-link, caso existam no menu, devem ter o correspondente equivalente alternativo em texto</li>
+</ul>
+
+<h3 id="teste">Teste</h3>
+
+<p>Modelo para testar: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/menu00.html">https://amagovpt.github.io/a11y/jornadas25/jf/menu00.html</a> (menu sem estrutura)</p>
+
+<p>Modelo para testar: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/menu00.html">https://amagovpt.github.io/a11y/jornadas25/jf/menu00.html</a> (menu com estrutura e navegação nas opções e subopções através de TAB)</p>
+
+<p>Modelo para testar: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/menu03.html">https://amagovpt.github.io/a11y/jornadas25/jf/menu03.html</a> (menu que faz uso de imagens-link nas opções)</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; structure &gt; 0 list significa que o menu não tem estrutura</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; structure &gt; lists, fornece inclusivamente o nº de itens da lista</p>
+
+<h2 id="notas-para-analise-do-aspeto-2-titulos-e-subtitulos">Notas para análise do aspeto 2 - Títulos e Subtítulos</h2>
+
+<h3 id="modelo">Modelo</h3>
+
+<p>Disponibilizar por página uma espécie de índice. Há várias tecnologias que usam este índice para permitir aos utilizadores saltarem por entre os diversos blocos de informação da página. No fundo, permite ao utilizador uma leitura não-linear da informação.</p>
+
+<ul>
+<li>H1: Título da página
+
+<ul>
+<li>H2: Secção
+
+<ul>
+<li>H3: Subsecção
+
+<ul>
+<li>H4: Sub Subsecção
+
+<ul>
+<li>H5: Sub ... subsecção
+
+<ul>
+<li>H6: Sub ... subsecção</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+
+<p>É uma estrutura que não nos é estranha. É desta forma que os processadores de texto constroem índices - eles recorrem à estrutura de cabeçalhos para construir automaticamente índices dos documentos. Os próprios índices dos livros são construídos com base nos cabeçalhos.</p>
+
+<figure>
+<img src="img/livro.png" alt="O índice de um livro tem por tradição longínqua o uso dos títulos para a construção das suas entradas " />
+<figcaption>O índice de um livro tem por tradição longínqua o uso dos títulos para a construção das suas entradas </figcaption>
+</figure>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>2 observações:</p>
+
+<ul>
+<li>2.1 Existe um título <code>&lt;h1&gt;</code> marcado na página</li>
+<li>2.2 Existe uma marcação hierarquizada de títulos e subtítulos na página (<code>&lt;h1&gt;...&lt;h6&gt;</code>)</li>
+</ul>
+
+<h3 id="teste">Teste</h3>
+
+<p>Modelo para teste: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/landmarks.html">https://amagovpt.github.io/a11y/jornadas25/jf/landmarks.html</a></p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; strucutes &gt; headings &gt; view headings list</p>
+
+<figure>
+<img src="img/headings.png" alt="Estrutura de cabeçalhos vista no ANDI" />
+<figcaption>Estrutura de cabeçalhos vista no ANDI</figcaption>
+</figure>
+
+<h2 id="notas-para-analise-do-aspeto-3-tabelas-de-dados">Notas para análise do aspeto 3 - Tabelas de dados</h2>
+
+<h3 id="modelo">Modelo</h3>
+
+<p>Usar <code>&lt;table&gt;</code> apenas para criar tabelas de dados. Não usar o elemento <code>&lt;table&gt;</code> para layout de páginas ou componentes.</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>2 obervações:</p>
+
+<ul>
+<li>3.1 As células que constituem os cabeçalhos da tabela estão marcadas com o elemento <code>&lt;th&gt;</code></li>
+<li>3.2 A legenda da tabela está marcada com o elemento <code>&lt;caption&gt;</code></li>
+</ul>
+
+<h3 id="teste">Teste</h3>
+
+<p>Modelo para teste: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/tabelas.html">https://amagovpt.github.io/a11y/jornadas25/jf/tabelas.html</a></p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; tables &gt; view table list, permite analisar o caption das tabelas</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; tables &gt; Table Alerts, permite analisar a inexistência de th</p>
+
+<p>Página com múltiplas tabelas de dados corretamente marcadas: <a class="autolink" href="https://www.acessibilidade.gov.pt/reports/monitor2/2report-pt.html">https://www.acessibilidade.gov.pt/reports/monitor2/2report-pt.html</a> </p>
+
+<h2 id="notas-para-analise-do-aspeto-4-formularios">Notas para análise do aspeto 4 - Formulários</h2>
+
+<p>Eis alguns problemas com que qualquer um de nós se confronta quando precisa de preencher um formulário: (1) O que preencher em cada campo ou pergunta, (2) quais são os campos facultativos e quais são os obrigatórios, (3) o que fazer para evitar erros e quando ocorrem, como os corrigir.</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>3 observações:</p>
+
+<ul>
+<li>4.1 Ao clicar com o rato na etiqueta, o cursor surge no respetivo campo de edição</li>
+<li>4.2 É possível identificar os campos de preenchimento obrigatório quando se usa apenas um leitor de ecrã</li>
+<li>4.3 É possível localizar e ler as mensagens de erro usando apenas um leitor de ecrã</li>
+</ul>
+
+<h3 id="testes">Testes</h3>
+
+<p>Modelo para teste: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/formulario01.html">https://amagovpt.github.io/a11y/jornadas25/jf/formulario01.html</a></p>
+
+<p>Modelo corrigido: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/formulario02.html">https://amagovpt.github.io/a11y/jornadas25/jf/formulario02.html</a></p>
+
+<p>(1) Para inspecionar o nome acessível dos campos de edição:</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; focusable elements &gt; consultar lista de ocorrências fornecida pelo ANDI.</p>
+
+<figure>
+<img src="img/form_input.png" alt="ANDI informa que há campos de edição sem etiquetas ou nome acessível" />
+<figcaption>ANDI informa que há campos de edição sem etiquetas ou nome acessível</figcaption>
+</figure>
+
+<p>(2) Para procurar conteúdo injetado com CSS (invisível a quem usa interfaces não-visuais como é o caso dos utilizadores de leitores de ecrã):</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; hidden content &gt; &quot;content ::before ::after&quot;</p>
+
+<figure>
+<img src="img/form_asterisco.png" alt="ANDI informa que o asterisco é proveniente da CSS" />
+<figcaption>ANDI informa que o asterisco é proveniente da CSS</figcaption>
+</figure>
+
+<p>(3) Mensagens de erro escondidas do leitor de ecrã mesmo quando visíveis no ecrã. Não vem da CSS, mas estão escondidas com <code>aria-hidden</code>.</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; hidden content &gt; &quot;aria-hidden scan&quot;</p>
+
+<figure>
+<img src="img/form_hidden.png" alt="ANDI informa que existem conteúdos escondidos com aria-hidden" />
+<figcaption>ANDI informa que existem conteúdos escondidos com aria-hidden</figcaption>
+</figure>
+
+<h2 id="notas-para-analise-do-aspeto-5-graficos-e-imagens-link">Notas para análise do aspeto 5 - Gráficos e imagens-link</h2>
+
+<p>Duas categorias de imagens que são consideradas críticas:</p>
+
+<ul>
+<li>Gráficos de dados estatísticos</li>
+<li>Imagens-link</li>
+</ul>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>3+1 observações:</p>
+
+<ul>
+<li>5.1 A imagem ou gráfico tem um equivalente alternativo em texto curto e correto</li>
+<li>5.2 O gráfico é acompanhado de uma descrição longa</li>
+<li>5.3 As imagens-link têm um equivalente alternativo correto</li>
+</ul>
+
+<p>5.1 (...) As imagens não decorativas deverão ter uma descrição breve associada, nomeadamente através do uso do atributo <code>alt</code>.</p>
+
+<h3 id="teste">Teste</h3>
+
+<p>Modelo para teste: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/grafico.html">https://amagovpt.github.io/a11y/jornadas25/jf/grafico.html</a></p>
+
+<p>Modelo corrigido (ícones com aria-label): <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/grafico02.html">https://amagovpt.github.io/a11y/jornadas25/jf/grafico02.html</a></p>
+
+<p>Modelo corrigido (ícones com aria-hidden + texto na vizinhança): <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/grafico03.html">https://amagovpt.github.io/a11y/jornadas25/jf/grafico03.html</a></p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; focusable name, permite analisar os elementos focáveis. Atenção aos que não têm nome acessível.</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; graphics/images, permite analisar as imagens e gráficos e inspecionar os respetivos nomes acessíveis. </p>
+
+<h2 id="notas-para-analise-do-aspeto-6-contraste">Notas para análise do aspeto 6 - Contraste</h2>
+
+<p>O contraste do texto com a cor de fundo interfere na legibilidade da informação. Há um limiar mínimo que deve ser respeitado. Isto não significa abdicar do uso da gradação da cor para hierarquizar informação ou abdicar da &quot;famosa&quot; cor da insignia. A insignia pode ter a cor que quiser. As regras de acessibilidade até isentam os logótipos de respeitarem os contrastes.</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>2 observações:</p>
+
+<ul>
+<li>6.1 No corpo de um documento, o rácio de contraste entre a cor do texto normal (menor que 18 pontos ou menor que 14 pontos negrito) e a cor do fundo é superior a 4,5:1</li>
+<li>6.2 O rácio de contraste entre a cor do texto de tamanho grande (maior ou igual que 18 pontos ou maior ou igual que 14 pontos negrito) e a cor do fundo é superior a 3:1</li>
+</ul>
+
+<h3 id="testes">Testes</h3>
+
+<p>Modelo para teste: <a class="autolink" href="https://amagovpt.github.io/a11y/jornadas25/jf/contraste.html">https://amagovpt.github.io/a11y/jornadas25/jf/contraste.html</a> .</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; color contrast</p>
+
+<p>Para testes manuais recomendamos o uso do validador Contrast Checker: <a class="autolink" href="https://contrastchecker.com">https://contrastchecker.com</a> .</p>
+
+<h2 id="notas-para-analise-do-aspeto-7-players">Notas para análise do aspeto 7 - Players</h2>
+
+<figure>
+<img src="img/video.png" alt="Youtube, um player com botões de controlo acessíveis, possibilidade de adicionar legendas fechadas e transcrição sincronizada" />
+<figcaption>Youtube, um player com botões de controlo acessíveis, possibilidade de adicionar legendas fechadas e transcrição sincronizada</figcaption>
+</figure>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>2+1 observaçoes:</p>
+
+<ul>
+<li>7.1 Deve ser possível ativar os botões de controlo do leitor quer com o rato quer com o teclado</li>
+<li>7.2 O vídeo ou o áudio deve conter preferencialmente legendas fechadas sincronizadas. Caso não seja possível, no mínimo, deve disponibilizar-se uma transcrição textual.</li>
+<li>7.2 (...) sempre que mensagem seja eminentemente visual, deve ser equacionado a produção de audiodescrição.</li>
+</ul>
+
+<h3 id="testes">Testes</h3>
+
+<p>(1) Navegar pelos botões de controlo. Detetar se botões são focáveis e se o nome acessível disponível cumpre o propósito.</p>
+
+<p>Um exemplo de um vídeo com legendagem (+transcrição), LGP. O Player é Youtube: <a class="autolink" href="https://www.youtube.com/watch?v=pm64gBg9ecU&list=PLh41dWEAcBMjV3oNFpLx-8p8Bg8PFHjxM&index=3&t=1270s">https://www.youtube.com/watch?v=pm64gBg9ecU&amp;list=PLh41dWEAcBMjV3oNFpLx-8p8Bg8PFHjxM&amp;index=3&amp;t=1270s</a></p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; focusable elements</p>
+
+<p>(2) Investigue no Player a possibilidade de sincronizar legendas fechadas (+Transcrição).</p>
+
+<p>(3) Avalie a necessidade do vídeo também ter Língua Gestual Portuguesa (LGP). Faça o mesmo para a audiodescrição.</p>
+
+<h2 id="notas-para-analise-do-aspeto-8-estrutura-da-pagina">Notas para análise do aspeto 8 - Estrutura da página</h2>
+
+<p>Estilo e Estrutura são duas peças que devem funcionar o mais separadas possível.</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>5 observações:</p>
+
+<ul>
+<li>8.1 Quando se retira a CSS, todos os elementos HTML devem <strong>alinhar à esquerda</strong></li>
+<li>8.2 Quando se retira a CSS, a informação aparece numa <strong>ordem lógica</strong></li>
+<li>8.3 Quando se retira a CSS, deve ser possível <strong>reconhecer a semântica</strong> dos diversos elementos</li>
+<li>8.4 Quando se retira a CSS, a <strong>informação relevante permanece visível</strong></li>
+<li>8.5 A maquetização da página é feita <strong>sem</strong> recorrer ao elemento <code>&lt;table&gt;</code> <strong>(tabelas-layout)</strong></li>
+</ul>
+
+<h3 id="teste">Teste</h3>
+
+<p>Infelizmente no ANDI é difícil observar com algum rigor esta separação.</p>
+
+<p>Recomendamos o uso da Barra de Ferramntas de Acessibilidade de Chris Pederick.</p>
+
+<ul>
+<li><a href="https://chrispederick.com/work/web-developer/">Chris Pederick</a> &gt; CSS &gt; Edit CSS, pemite editar e remover as folhas CSS.</li>
+</ul>
+
+<p>Para facilitar a leitura da linearização obtida acrescente:</p>
+
+<p>Limitador de tamanhos das imagens SVG:</p>
+
+<pre><code class="CSS">svg {
+    border:3px solid green;
+    max-width: 100px;
+    }
+</code></pre>
+
+<p>Limitador do tamanho das imagens img:</p>
+
+<pre><code class="CSS">img {
+        border:3px solid red;
+        max-width: 100px;
+    }
+</code></pre>
+
+<p>Para verificar a ordem de leitura:</p>
+
+<p><a href="https://www.ssa.gov/accessibility/andi/">ANDI</a> &gt; focusable elements &gt; tab order </p>
+
+<h2 id="notas-para-analise-do-aspeto-9-modais">Notas para análise do aspeto 9 - Modais</h2>
+
+<p>Na atualidade o uso de janelas modais é crescente e são um dos elementos mais difíceis de interagir com tecnologias de apoio. Para utilizadores de leitores de ecrã são elementos que, não raras as vezes, os mesmos nem se apercebem da sua existência na interface. </p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>4 observaçoes:</p>
+
+<ul>
+<li>9.1 Quando a caixa de diálogo é aberta, o foco (cursor do Browser) move-se para um elemento dentro da caixa de diálogo</li>
+<li>9.2 Quando uma caixa de diálogo está aberta, a navegação com teclado (Browser ou Tecnologia de apoio) tem de ficar circunscrita aos elementos que compõem a caixa de diálogo</li>
+<li>9.3 A caixa de diálogo tem de ter um mecanismo que permita sair ou fechar a caixa, quer através de teclado quer através de um dispositivo apontador</li>
+<li>9.4 Quando a caixa de diálogo fecha, o foco (cursor do Browser) deve voltar ao elemento interativo que a invocou</li>
+</ul>
+
+<h3 id="teste">Teste</h3>
+
+<p>Ver modelo em (W3C). Modal Dialog Example. ARIA Authoring Practices Guide: <a class="autolink" href="https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/#sc1_label">https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/examples/dialog/#sc1_label</a> </p>
+
+<p>No link acima ativar o botão &quot;Add Delivery Address&quot; para ativar a caixa de diálogo que serve de exemplo.</p>
+
+<h2 id="notas-para-analise-do-aspeto-10-ficheiros-pdf">Notas para análise do aspeto 10 - Ficheiros PDF</h2>
+
+<p>Um aspeto crítico num documento passa por, no mínimo, aceder ao seu texto.</p>
+
+<h3 id="requisitos">Requisitos</h3>
+
+<p>1 observação:</p>
+
+<ul>
+<li>10.1 Nos ficheiros PDF é possível, no mínimo, extrair o conteúdo textual para formato TXT</li>
+</ul>
+
+<h3 id="testes">Testes</h3>
+
+<p>Entre no ficheiro PDF usando um leitor de PDF como Acrobat Reader, Pré-visualização (macOS), ... e faça um copy paste para o Notepad (Windows) ou Editor de Texto (macOS). Verifique se o texto que foi copiado corresponde ao que é visível no documento original em PDF.</p>
+</body>
+</html>
