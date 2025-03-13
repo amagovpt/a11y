@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Empresa XPTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #f8f8f8;
+        }
+        .navbar a {
+            color: #d0d0d0;
+        }
+
+        .hero {
+            background: url('img/fundo.jpg') no-repeat center;
+            background-size: cover;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h1 {
+            color: white;
+        }
+
+        .section-light {
+            background-color: #ffffff;
+            color: #767676;
+            padding: 40px;
+        }
+
+        .service-card {
+            padding: 20px;
+            text-align: center;
+        }
+        .low-contrast-card {
+            background-color: #f2f2f2;
+            color: #a8a8a8;
+        }
+        .ok-contrast-card {
+            background-color: #fff;
+            color: #333;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #555;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Empresa XPTO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Soluções para o seu negócio</h1>
+        <p>Inovação e tecnologia ao seu alcance</p>
+    </section>
+
+    <section class="section-light text-center">
+        <h2>Nossos Valores</h2>
+        <p>Compromisso, qualidade e inovação para transformar empresas.</p>
+    </section>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 service-card low-contrast-card">
+                <h3>Consultoria</h3>
+                <p>Estratégias para crescimento empresarial.</p>
+            </div>
+            <div class="col-md-4 service-card ok-contrast-card">
+                <h3>Desenvolvimento</h3>
+                <p>Soluções personalizadas para sua empresa.</p>
+            </div>
+            <div class="col-md-4 service-card section-light">
+                <h3>Suporte</h3>
+                <p>Atendimento especializado para garantir qualidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Fale Conosco</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Empresa XPTO - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

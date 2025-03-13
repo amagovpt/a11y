@@ -1,0 +1,241 @@
+
+<!--
+Exemplo:
+- tabela de dados com h2 em vez de caption
+- tabela de dados sem th e com td
+
+-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo de Página com Tabelas de dados</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style type="text/css">
+        h1, h2 {
+            margin-bottom: 50px;
+        }
+        .table {
+            margin: 50px 30px;
+            border:1px solid black;
+        }
+        h3 {
+
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header com Navbar -->
+    <header class="bg-dark text-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Minha Página</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <h1>Tabelas de dados</h1>
+        
+        <h2>Tabelas de dados sem identificação das células de cabeçalho e título da tabela</h2>
+
+
+<h3 style="
+color: rgba(33, 37, 41, 0.75);
+font-size: 16px;
+font-weight: 400;
+height: 40px;
+line-height: 24px;
+margin:0px;
+position: relative;
+left: 30px;   /* Move para a direita */
+top: 55px;">Tabela 02 – Estatísticas descritivas da amostra de páginas</h3>
+
+<table class="table">
+<tbody>
+<tr>
+    <td style="text-align:left;">Estatística</td>
+    <td style="text-align:center;">Amostra</td>
+</tr>
+
+
+
+<tr>
+    <td style="text-align:left;">Sítios web</td>
+    <td style="text-align:center;">657</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Total de páginas</td>
+    <td style="text-align:center;">40,215</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Páginas por sítio web</td>
+    <td style="text-align:center;">61</td>
+</tr>
+</tbody>
+
+</table>
+
+
+        <h2>Tabelas de dados com identificação das células de cabeçalho e título da tabela</h2>
+
+<p>Exemplo de uma tabela correta.</p>
+
+<table class="table caption-top">
+<caption id="tabela-01-distribuicao-dos-sitios-web-por-tipo-de-servico">Tabela 01 – Distribuição dos sítios web por tipo de serviço</caption>
+<colgroup>
+<col style="text-align:left;">
+<col style="text-align:center;">
+<col style="text-align:center;">
+</colgroup>
+
+<thead>
+<tr>
+    <th style="text-align:left;">Tipo de Serviço</th>
+    <th style="text-align:center;">Número de sítios</th>
+    <th style="text-align:center;">% de sítios</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td style="text-align:left;">Administração Central</td>
+    <td style="text-align:center;">150</td>
+    <td style="text-align:center;">22.8%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Ensino Básico e Secundário</td>
+    <td style="text-align:center;">25</td>
+    <td style="text-align:center;">3.8%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Ensino Superior</td>
+    <td style="text-align:center;">86</td>
+    <td style="text-align:center;">13.1%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Hospitais</td>
+    <td style="text-align:center;">24</td>
+    <td style="text-align:center;">3.7%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Juntas de freguesia</td>
+    <td style="text-align:center;">37</td>
+    <td style="text-align:center;">5.6%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Municípios</td>
+    <td style="text-align:center;">89</td>
+    <td style="text-align:center;">13.5%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Museus</td>
+    <td style="text-align:center;">64</td>
+    <td style="text-align:center;">9.7%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Organizações Não Governamentais</td>
+    <td style="text-align:center;">67</td>
+    <td style="text-align:center;">10.2%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Órgãos de soberania e entidades independentes</td>
+    <td style="text-align:center;">11</td>
+    <td style="text-align:center;">1.7%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Portais e Serviços mais procurados</td>
+    <td style="text-align:center;">31</td>
+    <td style="text-align:center;">4.7%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Região Autónoma da Madeira</td>
+    <td style="text-align:center;">14</td>
+    <td style="text-align:center;">2.1%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Região Autónoma dos Açores</td>
+    <td style="text-align:center;">8</td>
+    <td style="text-align:center;">1.2%</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Setor Público Empresarial do Estado</td>
+    <td style="text-align:center;">51</td>
+    <td style="text-align:center;">7.8%</td>
+</tr>
+</tbody>
+</table>
+
+<p>Aqui está outro exemplo de tabela correta.</p>
+
+<table class="table caption-topj">
+<caption id="tabela-02-estatisticas-descritivas-da-amostra-de-paginas">Tabela 02 – Estatísticas descritivas da amostra de páginas</caption>
+<colgroup>
+<col style="text-align:left;">
+<col style="text-align:center;">
+</colgroup>
+
+<thead>
+<tr>
+    <th style="text-align:left;">Estatística</th>
+    <th style="text-align:center;">Amostra</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+    <td style="text-align:left;">Sítios web</td>
+    <td style="text-align:center;">657</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Total de páginas</td>
+    <td style="text-align:center;">40,215</td>
+</tr>
+<tr>
+    <td style="text-align:left;">Páginas por sítio web</td>
+    <td style="text-align:center;">61</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+
+    <!-- Footer com redes sociais -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 Minha Página. Todos os direitos reservados.</p>
+            <nav>
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i> YouTube</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
+
+

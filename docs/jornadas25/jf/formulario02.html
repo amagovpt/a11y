@@ -1,0 +1,134 @@
+
+<!--
+Exemplo corrigido:
+- campos de edição sem label 
+- indicador de campo obrigatório
+- mensagens de erro para interfaces não-visuais
+
+-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo de Formulários - versão corrigida</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Estilo Formulário -->
+    <style>
+        .error {
+            color: red;
+            font-size: 12px;
+        }
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+        input {
+            display:block;
+        }
+        label {
+            margin-top:20px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <!-- Header com Navbar -->
+    <header class="bg-dark text-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Minha Página</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <h1>Um formulário difícil</h1>
+    
+<form onsubmit="return validateForm(event)" novalidate>
+        <p>Nota: os campos assinalados com um <span style="color:red" aria-hidden="true">*</span> são de preenchimento obrigatório</p>
+        
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" aria-describedby="nomeInfo">
+        <div id="nomeInfo">Insira apenas o primeiro e o último nome.</div>
+
+        <label for="email">Endereço de correio eletrónico da sua mãe <span style="color:red" aria-hidden="true">*</span></label>
+        <input type="email" name="email" id="email" required aria-describedby="emailError">
+        <div class="error visually-hidden" id="emailError" aria-live="assertive"></div>
+
+        <label for="telefone">Telefone do seu pai</label>
+        <input type="tel" name="telefone" id="telefone">
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            var emailField = document.getElementById("email");
+            var emailError = document.getElementById("emailError");
+            var isValid = true;
+
+            if (!emailField.value) {
+                emailError.textContent = "Este campo é obrigatório";
+                emailError.classList.remove("visually-hidden");
+                isValid = false;
+            } else if (!emailField.value.includes("@") || !emailField.value.includes(".")) {
+                emailError.textContent = "Introduza um endereço de correio eletrónico válido";
+                emailError.classList.remove("visually-hidden");
+                isValid = false;
+            } else {
+                emailError.classList.add("visually-hidden");
+                emailError.textContent = "";
+            }
+
+            return isValid;
+        }
+    </script>
+
+    </main>
+
+    <!-- Footer com redes sociais -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 Minha Página. Todos os direitos reservados.</p>
+            <nav>
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i> YouTube</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+

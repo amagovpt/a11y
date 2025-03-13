@@ -1,0 +1,72 @@
+<!--
+Exemplo: 
+- nome acessível de um botão
+- botão saber mais
+- 
+-->
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demo de Página dos botões que o podem baralhar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Ícones do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header com Navbar -->
+    <header class="bg-dark text-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Minha Página</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <h1 id="bemvindo">Bem-vindo à página dos botões</h1>
+        <p>Esta é uma demonstração do nome acessível de elementos da interface e a forma como o mesmo é formado e chega às tecnologias de apoio.</p>
+
+        <p>Queres que formate o teu disco?</p>
+        <button type="button" class="btn btn-success" aria-label="Não">Sim</button>
+        <button type="button" class="btn btn-danger" aria-label="Sim">Não</button>
+        <p>Humm!! Estou com dúvidas :-)</p>
+        <button type="button" class="btn btn-warning" aria-labelledby="bemvindo">Saiba mais</button>
+
+
+
+
+    </main>
+
+    <!-- Footer com redes sociais -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p class="mb-1">© 2025 Minha Página. Todos os direitos reservados.</p>
+            <nav>
+                <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i> Facebook</a>
+                <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="#" class="text-light"><i class="bi bi-youtube"></i> YouTube</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

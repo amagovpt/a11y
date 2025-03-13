@@ -1,0 +1,104 @@
+<!--
+Menu sem estrutura:
+- montes de links
+- navegação nas opções e subopções apenas com rato
+- navegação com teclado só possível nas opções
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu - lista de opções</title>
+	<style>
+
+nav {
+    position: relative;
+}
+
+nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+nav > ul > li {
+    position: relative;
+    padding: 10px 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0;
+    width: 200px;
+}
+
+nav ul li ul li {
+    padding: 10px;
+    white-space: nowrap;
+}
+
+nav ul li:focus-within > ul,
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+nav ul li a:focus {
+    outline: 2px solid blue;
+    background-color: #eee;
+}
+
+	</style>
+</head>
+<body>
+
+
+<p>Antes do <a href="#">Teste</a></p>
+<nav aria-roledescription="menu" aria-label="Produtos e serviços CTT">
+<ul>
+	<li><a href="#"><img height="44" src="img/enviar.webp"></a></li>
+	<li><a href="#"><img height="44" src="img/receber.png"></a>
+		<ul>
+			<li><a href="#">Seguir objeto</a></li>
+			<li><a href="#">Desalfandegar</a></li>
+		</ul>
+	</li>
+	<li><a href="#"><img height="44" src="img/filatelia.png"></a>
+		<ul>
+			<li><a href="#">Plano de emissões</a></li>
+			<li><a href="#">Plano editorial</a></li>
+		</ul>
+	</li>
+	<li><a href="#"><img height="44" src="img/dinheiro_e_seguros.png"></a>
+		<ul>
+			<li><a href="#">Poupar e investir</a></li>
+			<li><a href="#">Fazer um seguro</a></li>
+		</ul>
+	</li>
+</ul>
+</nav>
+
+<p>Depois do <a href="#">Teste</a></p>
+
+</body>
+</html>

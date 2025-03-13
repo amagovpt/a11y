@@ -1,0 +1,93 @@
+<!--
+Menu estruturado
+- lista de opções e subopções com ul li
+- navegação com rato e teclado (apenas TAB e SHIFT TAB)
+- identificação do menu com nav
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu - lista de opções</title>
+	<style>
+
+div.menu {
+    display: flex;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 0;
+}
+
+div.menu > div {
+    position: relative;
+}
+
+div.menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+div.menu a:hover {
+    background-color: #eee;
+}
+
+div.menu div div {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 0;
+    width: 200px;
+}
+
+div.menu div:hover > div {
+    display: block;
+}
+
+
+	</style>
+</head>
+<body>
+
+
+<p>Antes do <a href="#">Teste</a></p>
+
+<div class="menu">
+    <div>
+        <a href="#">Enviar</a>
+    </div>
+    <div>
+        <a href="#">Receber</a>
+        <div>
+            <a href="#">Seguir objeto</a>
+            <a href="#">Desalfandegar</a>
+        </div>
+    </div>
+    <div>
+        <a href="#">Filatelia</a>
+        <div>
+            <a href="#">Plano de emissões</a>
+            <a href="#">Plano editorial</a>
+        </div>
+    </div>
+    <div>
+        <a href="#">Dinheiro e Seguros</a>
+        <div>
+            <a href="#">Poupar e investir</a>
+            <a href="#">Fazer um seguro</a>
+        </div>
+    </div>
+</div>
+
+
+<p>Depois do <a href="#">Teste</a></p>
+
+</body>
+</html>
